@@ -1,0 +1,164 @@
+
+
+.background-color
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+body {
+    background-color: rgb(67, 67, 177);
+  }
+
+
+.pricing-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.currency-unit-form {
+    margin-bottom: 20px;
+}
+
+.label-select-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Add style for form elements */
+label, select {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.pricing-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.pricing-toggle label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.pricing-toggle input {
+    margin-right: 8px;
+}
+
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pricing-plan {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.pricing-structure {
+    font-size: 14px;
+    color: #666;
+}
+
+.pricing-structure:hover {
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-plan {
+        width: 100%;
+    }
+
+    .label-select-container {
+        flex-direction: column;
+    }
+}
+
+
+
+.pricing-plan {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.pricing-structure:hover {
+    color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .pricing-plan {
+        width: 100%;
+    }
+}
+
+
+
+
+.order-now-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.order-now-btn:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+    .order-now-btn {
+        width: 100%;
+    }
+}

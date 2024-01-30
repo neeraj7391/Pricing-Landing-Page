@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pricing Page</title>
+</head>
+<body>
+
+  <div class="pricing-container">
+    <div class="currency-unit-form">
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="$">$ (USD)</option>
+        <option value="€">€ (EUR)</option>
+      </select>
+      <label for="unit">Select Unit:</label>
+      <select id="unit">
+        <option value="month">Month(s)</option>
+        <option value="year">Year(s)</option>
+      </select>
+    </div>
+    <div class="pricing-toggle">
+      <label>
+        <input type="checkbox" id="toggleSwitch">
+        <span>Monthly / Yearly</span>
+      </label>
+    </div>
+    <div class="pricing-table">
+      <div class="pricing-plan" id="basicPlan" data-plan="Basic" data-extra="">
+        <h2>Basic Plan</h2>
+        <p class="price" id="basicPrice">$10/month</p>
+        <p class="pricing-structure">Access to Basic features:<br> - User 5<br> - Projects 20</p>
+        <button class="order-now-btn" onclick="orderNow('Basic', '$10/month')">Order Now</button>
+      </div>
+      <div class="pricing-plan" id="proPlan" data-plan="Pro" data-extra="">
+        <h2>Pro Plan</h2>
+        <p class="price" id="proPrice">$20/month</p>
+        <p class="pricing-structure">Access to Pro features:<br> - User 20<br> - Projects 50</p>
+        <button class="order-now-btn" onclick="orderNow('Pro', '$20/month')">Order Now</button>
+      </div>
+      <div class="pricing-plan" id="premiumPlan" data-plan="Premium" data-extra="Feature 5">
+        <h2>Premium Plan</h2>
+        <p class="price" id="premiumPrice">$30/month</p>
+        
+        <p class="pricing-structure">Access to Premium features:<br> - User 60<br> - Projects 100</p>
+        <button class="order-now-btn" onclick="orderNow('Premium', '$30/month')">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
